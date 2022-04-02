@@ -45,7 +45,7 @@ public class foodMenuControllerTest {
 
     //test menu by id
     @Test
-    @WithMockUser(username = "aniruddha",password = "pass")
+    @WithMockUser(username = "priyanka",password = "pass")
     public void getMenubyId() throws Exception {
         Product p = new Product(1,"italian pasta","dd",10);
         Mockito.when(productService.get(1)).thenReturn(p);
@@ -55,7 +55,7 @@ public class foodMenuControllerTest {
 
     //test whole menu
     @Test
-    @WithMockUser(username = "aniruddha",password = "pass")
+    @WithMockUser(username = "priyanka",password = "pass")
     public void getMenu() throws Exception {
         Product p = new Product(1,"italian pasta","dd",10);
         Product q = new Product(1,"italian pasta","dd",10);
