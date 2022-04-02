@@ -34,7 +34,7 @@ public class foodMenuControllerTest {
 
 //test bill sum amount
     @Test
-    @WithMockUser(username = "aniruddha",password = "pass") //userid pass login checked
+    @WithMockUser(username = "priyanka",password = "pass") //userid pass login checked
     public void buyByIds() throws Exception {
         Product p = new Product(1,"italian pasta","dd",10);
         Mockito.when(productService.get(1)).thenReturn(p);
